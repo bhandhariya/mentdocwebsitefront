@@ -1,0 +1,36 @@
+#mainHeading{
+    padding-left:25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    text-align: center;
+}
+#text{
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: justify;
+}
+p{
+    color:#333;
+    font-size: 13px;
+}
+h4{
+    color:#333;
+    line-height: 1.1em;
+}
+#subText{
+    color: #21abe1 !important;
+}
+.single-service{
+    box-shadow:0 4px 8px 0 rgba(0,0,0 ,.2);
+    transition:0.3s;
+    /*padding-top: 40px;*/
+
+}
+h4{
+    color: #333;
+    line-height: 1.1em;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}

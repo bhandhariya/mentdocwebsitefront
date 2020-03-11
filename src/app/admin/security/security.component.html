@@ -1,0 +1,40 @@
+<div class="container">
+    <div class="card" [formGroup]="gallaryForm" >
+      <div class="card-header">
+        Add new Gallary Image 
+      </div>
+
+      <div class="card-body">
+        <input type="text" formControlName="title" placeholder="entar the title" class="form-control">
+        <h5 class="card-title">Select a file for upload:</h5>
+        <input type="file" (change)="uploadPhoto($event)" class="form-control" accept=".png,.jpg" />
+        <button (click)="bannerFormSubmit(gallaryForm.value)" class="btn btn-primary" >Add Photo</button>
+      </div>
+    </div>
+  </div>
+
+<div  class="container"  >
+    <table class="table">
+        <thead>
+            <tr>
+                <th>SN</th>
+                <th>Titlt</th>
+                <th>Photo</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let i of gallaries">
+                <td scope="row">
+                    
+                </td>
+                <td>{{i.title}}</td>
+                <td>
+                    <img height="100px" src="{{i.photoUrl}}" alt="">
+                </td>
+                <td><button class="btn btn-success" >Active</button>
+                    <button class="btn btn-danger" (click)="deleteByID(i._id)" >Remove by id</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,15 @@
+<div class="services">
+    
+  <ngb-carousel *ngIf="images"  >
+    <ng-template ngbSlide *ngFor="let item of images">
+      <div class="picsum-img-wrapper" >
+        <img [src]="item.photoUrl" alt="Random first slide" >
+      </div>
+      <div class="carousel-caption">
+        <h3>{{item.title}}</h3>
+        <p>This carousel uses customized default values.</p>
+      </div>
+    </ng-template>
+  
+  </ngb-carousel>
+    </div>

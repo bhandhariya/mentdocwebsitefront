@@ -1,0 +1,227 @@
+
+.container-fluid{
+  position:fixed;
+
+  top: 0;
+  width:100%;
+  
+  
+ /* max-width: 1000px;*/
+  margin: 0 auto; 
+}
+header{
+ z-index: 500;
+  
+  color: #EBEBD3;
+  padding: 1em 0;
+  position: relative;
+
+  background-position: center;
+  
+  background-repeat: no-repeat;
+  background-size:cover;
+
+}
+header::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.logo{
+  float: left;
+  height: 50px;
+  position:absolute;
+  left:10px;
+  top:-12px;
+  margin: 0px 15px 15px 0px;
+}
+
+.site-nav{
+ 
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: black;
+  clip-path: circle(0px at top right);
+  transition:clip-path ease-in-out 700ms;
+}
+.site-nav--open{
+  clip-path: circle(150% at top right) ;
+}
+.site-nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li{
+  border-bottom: 1px solid #575766;
+}
+.site-nav a{
+  color:darkslategrey;
+  text-decoration: none;
+  display: block;
+  padding: 2em 4em 2em 1.5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+.site-nav a:hover,.site-nav a:focus{
+  background: #E4B363;
+  color: #464655;
+}
+.site-nav li:last-child{
+  border-bottom: none;
+}
+.site-nav--icon{
+  display: inline-block;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align:right;
+  color: rgba(255,255,255,.25);
+  font-size: 1.5em;
+}
+.menu-toggle{
+
+  padding: 1em;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+  cursor: pointer;
+}
+.hamburger,.hamburger::before,.hamburger::after{
+  content: '';
+  display: block;
+  background: #EBEBD3;
+  height:3px;
+  width: 1.75em;
+  background: #EBEBD3;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+.container-fluid.black{
+  background: #fff;
+}
+.hamburger::before{
+  transform: translateY(-6px);
+}
+.hamburger::after{
+  transform: translateY(3px);
+}
+.open .hamburger{
+  transform: rotate(45deg);
+}
+.open .hamburger::before{
+  opacity: 0;
+}
+.open .hamburger::after{
+  transform: translateY(-3px) rotate(-90deg);
+}
+/*.site-nav a::before,.site-nav a::after{
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background:lightcoral;
+  content: '';
+  opacity: 0;
+  transition: all 0.3s;
+  }
+  .site-nav a::before{
+    top: 0px;
+    transform: translateY(10px);
+  }
+  .site-nav a::after{
+    bottom: 0px;
+    transform: translateY(-10px);
+  }
+  .site-nav a:hover::before,.site-nav a:hover::after{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  */
+@media (min-width:700px){
+    .menu-toggle{
+      display:none;
+    }
+    .site-nav{
+      height:auto;
+      position: relative;
+      background: transparent;
+      float: right;
+      clip-path: initial ;
+    }
+    .site-nav li{
+      display:inline-block;
+      border: none;      
+    }
+    .site-nav a{
+      padding: 7px;
+      margin-left:.5em;
+    }
+    .site-nav a:hover,.site-nav a:focus{
+      background: transparent;
+    }
+    .site-nav--icon{
+      display: none;
+    }
+    
+
+}
+
+
+/*
+  *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+  
+  
+  }
+  header{
+    background-image:url('../../../../assets/image/header/Mentdoc.png') ,  linear-gradient(rgba(0,0,100,0.5),rgba(0,0,100,0.5));
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    z-index: 500;
+  }
+  nav{
+    position: fixed;
+    width:100%;
+    
+  
+  }nav ul{
+    float:right;
+    margin-right: -60px;
+    padding-right:42px;
+  }
+  nav ul li{
+    display: inline-block;
+    padding: 16px 32px;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color:#135300;
+    font-size: 16px;
+  }
+  .logo{
+    height: 48px;
+    float: left;
+  }
+  nav.black{
+    background: #fff;
+  }
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+    }
+    
+    .progress-bar {
+    height: 8px;
+    background: #4caf50;
+    width: 0%;
+    }
+    */

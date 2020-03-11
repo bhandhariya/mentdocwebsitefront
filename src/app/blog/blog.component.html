@@ -1,0 +1,41 @@
+<app-header2></app-header2>
+<section id="blog">
+    <div class="container">
+            
+         <div class="row">
+             <div class="col-lg-6 col-lg-offset-3 text-center">  
+                 <h2>
+                     <span class="ion-minus"></span>Blog Posts<span class="ion-minus"></span>
+                 </h2>
+             </div> 
+          </div>  
+                 
+         <div class="row">
+              
+       
+                 <div class="item">
+                     <div class="row">
+                         
+                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12" *ngFor="let item of Blogs">
+                          <div class="card text-center">
+                             <img class="card-img-top" src="{{item.image}}" alt="" width="100%">
+                             <div class="card-block">
+                                 <h4 class="card-title">{{item.title}}</h4>
+                                 <p class="card-text">{{item.text}}</p>
+                                 <a class="btn btn-default" (click)="getSingleBlog(item._id)">Read More</a>
+                             </div>
+                          </div>
+                       </div>
+                       
+                      
+                         
+                     </div> <!-- row -->
+                 </div> <!-- item -->
+                  
+                  
+                 
+         </div>
+             
+     </div>
+ </section>
+ <app-footer></app-footer>

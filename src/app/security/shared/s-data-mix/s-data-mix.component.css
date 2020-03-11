@@ -1,0 +1,35 @@
+.our_ability_img{
+
+}
+.imagg{
+    margin-left: 100px;
+}
+
+.our_ability_member_text h2 { 
+    color: #111;
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-size: 40px;
+      font-weight: bold;
+       letter-spacing: -1px;
+        line-height: 1; 
+        text-align: center;
+        margin-top: -100px;
+
+}
+
+.our_ability_member_text p{
+    color: #111111; font-family: 'Lato', sans-serif; font-size: 20px; font-weight: 300; line-height: 58px; margin: 0 0 58px; }
+.text{
+    margin-top: 200px;
+    margin-left: -50px;
+}
+
+@media only screen and (max-width: 420px) {
+    img{
+        margin-left: -100px;
+        width: 100%;
+    }
+    .our_ability_member_text p{
+        margin-left: 50px;
+    }
+  }

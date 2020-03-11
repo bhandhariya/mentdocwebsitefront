@@ -1,0 +1,212 @@
+/*.about{
+    padding-top: 100px;
+    padding-bottom: 100px;  
+  }
+  
+  .about img{
+    width: 30vh;
+  }
+  .cen{
+    padding-top: 50px;
+    padding-bottom:50px ;
+    max-width: 1200px;
+  }*/
+
+.first{
+    background: #f1f1f1;
+}
+.second{
+    background:#f1f1f1;
+}
+.third{
+    background: #f1f1f1;
+}
+.fifth{
+    background: #f1f1f1
+}
+
+  .services{
+    background: #fff;
+    text-align:center;
+    z-index: 500;
+    
+}
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    border-bottom: 4px solid #25CCF7;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow:hidden;
+    padding:20px;
+}
+.service{
+    display: inline-block;
+    width: calc(100% /2);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition:0.4s;
+
+
+}
+
+.service:hover{
+    background:#ddd;
+}
+
+
+.service img{
+   
+    margin-bottom: 30px;
+    width: 38vh;
+
+}
+.service h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.service p{
+    color:gray;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+@media screen and (max-width:800px){
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px){
+    .service{
+        width:100%;
+    }
+}
+
+
+/*
+.services{
+    background: #28328c;
+  
+}
+.services h1{
+    display: inline-block;
+    text-transform: uppercase;
+    
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+.cen{
+    max-width: 1200px;
+    margin: auto;
+    overflow:hidden;
+    padding:20px;
+}
+.service{
+    display: inline-block;
+    width: calc(100% / 2);
+    margin: 0 -2px;
+    padding: 20px;
+    box-sizing: border-box;
+    
+    transition:0.4s;
+
+
+}
+.cushion-v a img{
+   
+    margin-bottom: 30px;
+    width: 20vh;
+
+
+}
+
+.service img{
+   
+    margin-bottom: 30px;
+    width: 70vh;
+
+
+}
+
+.service h1{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    color:#ffffff;
+}
+
+.clearfix{
+    color:#ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    display:block;
+
+}
+.service .clearfix:before{
+    content:" ";
+    display:table;
+
+}
+.service .clearfix:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content:" ";
+    clear:both;
+    height:0;
+}
+span tag related
+span tag related css
+.display-cell{
+    display: table-cell;
+}
+.dash{
+    margin:0;
+}
+.display-cell .dash{
+    text-decoration:none;
+    font-style: normal;
+    opacity: .5;
+}
+
+playstore logo css            
+.cushion-v
+{
+    padding:20px 0;
+    float:left;
+}
+
+link 
+h5 a{
+    color:#14bef0!important;
+    cursor:pointer;
+    text-decoration:none;
+}
+
+h5{
+    font-weight:700;
+    font-size:14px;
+    line-height:20px;
+    margin:15px 0;
+}
+
+@media screen and (max-width:800px){
+    .service{
+        width: 50%;
+    }
+}
+@media screen and (max-width:500px){
+    .service{
+        width:100%;
+    }
+}
+*/

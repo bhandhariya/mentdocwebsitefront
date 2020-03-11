@@ -1,0 +1,65 @@
+
+  <div class="d-flex" id="wrapper">    
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Admin Panel</div>
+      <div class="list-group list-group-flush">
+        <a  class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/home']">Home</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/banner']" >Banner</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/blog']" >Blog</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/contact']" >Testimonial</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/security']" >Gallary</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light" [routerLink]="['/admin/blog']" >Testimonial</a>
+      </div>
+    </div>
+    <div id="page-content-wrapper">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Dashboard Control panel</button>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Profile</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">log Out</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        <!-- <div *ngIf="banner">
+          <h1 >banner</h1>
+          <div class="container">
+            <div class="card" [formGroup]="bannerForm" >
+              <div class="card-header">
+                Firebase Cloud Storage & Angular 5
+              </div>
+
+              <div class="card-body">
+                <input type="text" formControlName="title">
+                <h5 class="card-title">Select a file for upload:</h5>
+                <input type="file" (change)="uploadPhoto($event)" accept=".png,.jpg" />
+                <button (click)="bannerFormSubmit(bannerForm.value)" >Add Banner</button>
+              </div>
+            </div>
+          </div>
+        </div> -->
+          
+        <router-outlet></router-outlet> 
+        
+      </div>
+    </div>
+  </div>
